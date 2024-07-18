@@ -1,4 +1,5 @@
-import {defineField, defineType} from 'sanity'
+import {defineField, defineType, Rule} from 'sanity'
+
 
 export const product = defineType({
   name: 'product',
@@ -36,6 +37,19 @@ export const product = defineType({
       options: {
         hotspot: true,
       },
+    }),
+    defineField({
+      name: 'affiliateLink',
+      title: 'Link di Affiliazione Amazon',
+      type: 'url',
+      validation: (Rule:Rule) => Rule.uri({scheme: ['http', 'https']})
+    }),
+    defineField({
+      name: 'category',
+      title: 'Categoria',
+      type: 'reference',
+      to: [{type: 'category'}],
+      validation: (Rule: Rule) => Rule.required(),
     }),
   ],
 })
