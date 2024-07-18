@@ -8,11 +8,11 @@ Per iniziare con questo progetto, segui questi passaggi:
 
 1. Registra un account su:
 
-   _https://www.sanity.io/
+   https://www.sanity.io/
 
 2.  Crea un nuovo progetto dal tuo pannello di controllo sanity:
 
-   _https://www.sanity.io/manage_
+    https://www.sanity.io/manage
 
 3. Clona il repository
 
